@@ -1,0 +1,427 @@
+*
+  padding: 0
+  margin: 0
+  outline: 0
+
+body
+  font-family: Verdana, sans-serif
+  font-size: 11px
+  line-height: 14px
+  color: #5e5e5e
+
+.c_img
+  position: relative
+  margin-top: 20px
+  padding-top: 20px
+  background-image: url('/template/images/vedro.jpg')
+  width: 100%
+  height: auto
+  opacity: .8
+
+input, textarea, select
+  font-family: Verdana, sans-serif
+  font-size: 13px
+
+textarea
+  overflow: hidden
+
+.field
+  border: solid 1px #d3cfc7
+  background: #fff
+  padding: 5px
+
+.small-field
+  border: solid 1px #d3cfc7
+  background: #fff
+  padding: 3px 1px
+  font-size: 11px
+
+.checkbox
+  width: 13px
+  height: 13px
+  vertical-align: top
+  position: relative
+  top: 2px
+
+.button
+  background: #eee url(/template/images/button.gif) repeat-x 0 0
+  border: solid 1px #b1a874
+  color: #7f7f7f
+  font-size: 11px
+  padding: 2px 6px 2px 6px
+  cursor: pointer
+  line-height: 14px !important
+  &:hover
+    color: #333
+    border-color: #857b42
+
+.field:focus
+  color: #000
+  border-color: #857b42
+
+a
+  img
+    border: 0
+  color: #ba4c32
+  text-decoration: underline
+  cursor: pointer
+  &:hover
+    color: #8d341f
+    text-decoration: none
+
+.left, .alignleft
+  float: left
+  display: inline
+
+.right, .alignright
+  float: right
+  display: inline
+
+.cl
+  font-size: 0
+  line-height: 0
+  clear: both
+  display: block
+  height: 0
+
+.al
+  text-align: left
+
+.ar
+  text-align: right
+
+.ac
+  text-align: center !important
+
+h1
+  font-size: 22px
+  line-height: 24px
+  color: #fff
+  font-weight: normal
+  a
+    color: #fff
+    text-decoration: none
+
+h2
+  font-size: 15px
+  font-weight: normal
+
+h3
+  font-size: 12px
+  line-height: 14px
+  font-weight: normal
+  a
+    text-decoration: none
+
+.shell
+  width: 988px
+  margin: 0 auto
+
+#header
+  height: 89px
+  background: url(/template/images/header.gif)
+  white-space: nowrap
+  h1
+    float: left
+    display: inline
+    padding-top: 12px
+
+#top-navigation
+  float: right
+  white-space: nowrap
+  color: #fff
+  padding-top: 15px
+  a
+    color: #fff
+  span
+    color: #dca598
+
+#top
+  height: 53px
+
+#navigation
+  height: 36px
+  ul
+    list-style-type: none
+    li
+      float: left
+      display: inline
+      margin-right: 2px
+      a
+        float: left
+        height: 36px
+        background: url(/template/images/tab.gif) no-repeat 0 0
+        padding: 0 0 0 15px
+        span
+          float: left
+          height: 36px
+          background: url(/template/images/tab.gif) no-repeat 0 0
+          padding: 0 0 0 15px
+          background-position: right 0
+          padding: 0 15px 0 0
+        line-height: 36px
+        color: #907525
+        text-decoration: none
+        &.active, &:hover
+          background-position: 0 bottom
+        &.active span, &:hover span
+          background-position: right bottom
+        &.active
+          font-size: 12px
+          font-weight: bold
+          color: #887e42
+
+#container
+  padding: 20px 0
+
+.small-nav
+  color: #978b48
+  padding-bottom: 20px
+  a
+    color: #6f6636
+
+#main
+
+#content
+  float: left
+  width: 60%
+
+#sidebar
+  float: right
+  width: 37%
+
+.table
+  th
+    background: #fffdfa url(/template/images/th.gif) repeat-x 0 0
+    color: #818181
+    text-align: left
+    padding: 7px 10px
+    border-bottom: solid 1px #d2d1cb
+  td
+    background: #fbfcfc
+    border-bottom: solid 1px #e0e0e0
+    padding: 8px 10px
+  tr
+    &.odd td
+      background: #f8f8f8
+    &:hover td
+      background: #fff9e1
+  a.ico
+
+.box
+  background: #fbfcfc
+  height: auto
+  padding: 1px
+  margin-bottom: 20px
+
+.box-head
+  background: #87ae26
+  height: 32px
+  color: #fff
+  padding: 0 10px
+  line-height: 32px
+  white-space: nowrap
+  border-bottom: solid 1px #fff
+  .right
+    padding-top: 5px
+    line-height: 13px
+    label, input
+      float: left
+    label
+      padding: 4px 0 0 0
+    input
+      margin-left: 5px
+
+.pagging
+  height: 20px
+  padding: 8px 10px
+  line-height: 19px
+  color: #949494
+  a
+    background: url(/template/images/pagging.gif) repeat-x 0 0
+    height: 20px
+    float: left
+    padding: 0 8px
+    border: solid 1px #d5d5d5
+    text-decoration: none
+    color: #949494
+    margin-left: 5px
+    &:hover
+      border-color: #8c3521
+      background: #ba4c32
+      color: #fff
+  span
+    float: left
+    margin-left: 5px
+    padding-top: 2px
+
+a
+  &.ico
+    color: #9d9c9a
+    font-size: 10px
+    text-decoration: none
+    padding: 0 0 0 14px
+    background-repeat: no-repeat
+    background-position: 0 0
+    &:hover
+      color: #333
+  &.del
+    background-image: url(/template/images/del.gif)
+  &.edit
+    background-image: url(/template/images/edit.gif)
+    margin-left: 14px
+
+.form
+  padding: 15px 10px 5px 10px
+  label
+    display: block
+    font-weight: bold
+    font-size: 13px
+    padding-bottom: 4px
+    span
+      color: #999
+      font-weight: normal
+  .field
+    display: block
+  .inline-field .field
+    display: inline
+  .req
+    font-size: 13px
+    float: right
+    white-space: nowrap
+    color: #999
+  p
+    padding-bottom: 15px
+
+.size1
+  width: 100%
+
+.size2
+  width: 80px
+
+.size3
+  width: 120px
+
+textarea.size1
+  height: 180px
+
+.buttons
+  text-align: right
+  padding: 10px
+  background: #eee
+  border-top: solid 1px #e0e0e0
+  .button
+    margin-left: 3px
+
+.box-content
+  padding: 10px
+
+.sort
+  border-top: solid 1px #e0e0e0
+  padding-top: 10px
+  margin-top: 15px
+  label
+    display: block
+    font-weight: bold
+  .field
+    display: block
+    margin-top: 5px
+  select.field
+    width: 203px
+
+.box-content p
+  padding-top: 10px
+
+.select-all label
+  text-decoration: underline
+  padding-left: 4px
+
+.add-button
+  float: left
+  height: 26px
+  background: url(/template/images/add-button.gif) no-repeat 0 0
+  padding: 0 0 0 28px
+  span
+    float: left
+    height: 26px
+    background: url(/template/images/add-button.gif) no-repeat 0 0
+    padding: 0 0 0 28px
+    background-position: right 0
+    padding: 0 10px 0 0
+  font-weight: bold
+  font-size: 12px
+  color: #747474
+  text-decoration: none
+  line-height: 26px
+  &:hover
+    color: #333
+
+#footer
+  height: 44px
+  background: url(/template/images/footer.gif)
+  line-height: 44px
+  color: #fff
+  a
+    color: #fff
+
+.msg
+  position: relative
+  padding-right: 35px
+  margin-bottom: 10px
+  p
+    padding: 9px 10px 9px 40px
+    font-size: 12px
+    background-repeat: no-repeat
+    background-position: 10px 5px
+  a.close
+    font-size: 0
+    line-height: 0
+    position: absolute
+    top: 0
+    right: 0
+    width: 34px
+    height: 34px
+    background: url(/template/images/close.gif)
+    text-indent: -4000px
+
+.msg-ok p
+  background-color: #fffac2
+  border: solid 1px #dbd6a2
+  color: #5e5c40
+  background-image: url(/template/images/msg-ok.gif)
+
+.msg-error p
+  background-color: #f3c598
+  border: solid 1px #e8b084
+  color: #ba4c32
+  background-image: url(/template/images/msg-error.gif)
+
+/*** CSS3 **
+
+.box
+  -moz-border-radius: 5px
+  -webkit-border-radius: 5px
+  -moz-box-shadow: 0 0 6px #978f6c
+  -webkit-box-shadow: 0 0 6px #978f6c
+
+.box-head
+  -moz-border-radius-topleft: 5px
+  -moz-border-radius-topright: 5px
+  -webkit-border-top-left-radius: 5px
+  -webkit-border-top-right-radius: 5px
+
+.field, .button
+  -moz-border-radius: 4px
+  -webkit-border-radius: 4px
+
+.small-field, .button, .pagging a
+  -moz-border-radius: 3px
+  -webkit-border-radius: 3px
+
+.msg p
+  -moz-border-radius: 6px
+  -webkit-border-radius: 6px
+
+.button
+  -moz-box-shadow: 0 0 2px #978f6c
+  -webkit-box-shadow: 0 0 2px #978f6c
