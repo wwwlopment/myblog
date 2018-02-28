@@ -99,9 +99,9 @@ preview = :preview
 WHERE id = :id';
             $data = $db->prepare($sql);
             $data->bindValue(':title', $_POST['blog_title']);
-            $data->bindValue(':content', htmlentities(nl2br($_POST['blog_content'], ENT_QUOTES)));
+            $data->bindValue(':content', $_POST['blog_content']);
 
-            $data->bindValue(':short_content', mb_substr($_POST['blog_content'], 0, 80));
+            $data->bindValue(':short_content', mb_substr(strip_tags($_POST['blog_content']), 0, 80));
             $data->bindValue(':author_name', $_SESSION['login']);
             $data->bindValue(':preview', $new_name);
             $data->bindValue(':id', $id, PDO::PARAM_INT);

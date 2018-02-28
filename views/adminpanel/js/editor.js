@@ -11,7 +11,7 @@ You should have received a copy of the GNU General Public License along with thi
 $(document).ready(function() {
     // your code here
 */
-
+/*$= jQuery;*/
 (function( $ ){
 	var editorObj;
 	var methods = {
@@ -1017,6 +1017,7 @@ $(document).ready(function() {
 								  		class : "row-fluid"
 							}).prependTo(containerDiv);
 	       	var editor  = $( "<div/>",{	class : "Editor-editor",
+                						name : "blog_content",
 										css : {overflow: "auto"},
 										contenteditable:"true"
 						 	}).appendTo(containerDiv);
